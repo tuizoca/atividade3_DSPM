@@ -28,22 +28,12 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/caf3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="setPreco"
-                android:text="Capuccino - R$5,00"
-                android:textSize="30dp"
-                android:checked="true"/>
-
-
-            <RadioButton
                 android:id="@+id/caf1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="setpreco"
                 android:text="Café Pelé - R$3,00"
                 android:textSize="30dp"
-                android:onClick="setpreco"
 
                 />
 
@@ -51,11 +41,21 @@
                 android:id="@+id/caf2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_above="@+id/butt"
                 android:onClick="setpreco"
                 android:text="Café com leite - R$4,00"
-                android:textSize="30dp"
 
-                />
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/caf3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/butt"
+                android:onClick="setpreco"
+                android:text="Capuccino - R$5,00"
+                android:textSize="30dp" />
+
 
         </RadioGroup>
 
@@ -106,12 +106,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Preço total:R$0,00"
+            android:text=""
             android:textSize="40dp"
             android:id="@+id/tot"
             />
 
     </LinearLayout>
+
+
 
 
 
